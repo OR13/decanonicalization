@@ -1,6 +1,8 @@
 
 #### 🔏 JSON Web Signatures are better at protecting content type `application/credentials+ld+json`.
 
+[![CI](https://github.com/OR13/decanonicalization/actions/workflows/ci.yml/badge.svg)](https://github.com/OR13/decanonicalization/actions/workflows/ci.yml)
+
 This reposistory demonstrates that [data integrity proof](https://www.w3.org/TR/vc-data-integrity/) `sign` and `verify` operation times are bound to the size of the input data interpreted as RDF.
 
 This is because data integrity proofs require some form of canonicalizaton, most commonly [URDNA2015](https://www.w3.org/TR/rdf-canon/).
