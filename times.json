@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Data Integrity - Sign",
+    "data": [
+      0.025,
+      0.004,
+      0.009,
+      0.004
+    ]
+  },
+  {
+    "name": "Data Integrity - Verify",
+    "data": [
+      0.006,
+      0.005,
+      0.003,
+      0.009
+    ]
+  },
+  {
+    "name": "JSON Web Signature - Sign",
+    "data": [
+      0.002,
+      0,
+      0.002,
+      0
+    ]
+  },
+  {
+    "name": "JSON Web Signature - Verify",
+    "data": [
+      0.001,
+      0.013,
+      0,
+      0.004
+    ]
+  }
+]
