@@ -2,40 +2,32 @@
   {
     "name": "Data Integrity - Sign",
     "data": [
-      0.011,
-      0.002,
-      0.003,
-      0.003,
-      0.02
+      0.029,
+      0.01,
+      0.01
     ]
   },
   {
     "name": "Data Integrity - Verify",
     "data": [
-      0.002,
-      0.002,
-      0.002,
-      0.002,
-      0.007
+      0.013,
+      0.003,
+      0.01
     ]
   },
   {
     "name": "JSON Web Signature - Sign",
     "data": [
-      0.001,
+      0.002,
       0,
-      0,
-      0,
-      0
+      0.003
     ]
   },
   {
     "name": "JSON Web Signature - Verify",
     "data": [
-      0,
-      0,
-      0,
-      0,
+      0.007,
+      0.002,
       0
     ]
   }
