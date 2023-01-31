@@ -9,6 +9,6 @@ A clever attacker can ask a verifier expensive questions.
 
 The verifier will be forced to cannonicalize before checking the signature.
 
-This can cost the verifier a lot of compute time, for something that will not even very.
+This can cost the verifier a lot of compute time, for a proof that might not even verify.
 
 See this twitter thread: [just... sign... the... bytes...](https://twitter.com/OR13b/status/1618415157235052545)
