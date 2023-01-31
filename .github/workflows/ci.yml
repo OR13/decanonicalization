@@ -21,6 +21,6 @@ jobs:
       - name: Publish 🚀
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: update docs
+          commit_message: Add test report to docs
           push_options: --force
           branch: main
