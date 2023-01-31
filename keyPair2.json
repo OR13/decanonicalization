@@ -1,0 +1,7 @@
+{
+  "id": "https://example.edu/issuers/565049#z6MkiquE5MxVqA6QxWNzbv5xvY8R9qkn8Jf7E29aXzz1fbwu",
+  "type": "Ed25519VerificationKey2020",
+  "controller": "https://example.edu/issuers/565049",
+  "publicKeyMultibase": "z6MkiquE5MxVqA6QxWNzbv5xvY8R9qkn8Jf7E29aXzz1fbwu",
+  "privateKeyMultibase": "zrv3gTcRLz4tK6tFkio54FP4WTzkEr2fMQxSKvGiqkDQngrqJDHfZ4PGiasnBFX1WjfzHtreCYRzcMVx3LeFDKQcPDH"
+}

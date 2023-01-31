@@ -1,0 +1,19 @@
+{
+  "name": "lazy-bench-mark",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node generate-times.js",
+    "shove": "git add -A; git commit -m ':rainbow::rocket:'; git push origin main"
+  },
+  "author": "Orie Steele",
+  "license": "MIT",
+  "dependencies": {
+    "@digitalbazaar/ed25519-signature-2020": "^5.0.0",
+    "@digitalbazaar/ed25519-verification-key-2020": "^4.1.0",
+    "jose": "^4.11.2",
+    "jsonld-signatures": "^11.0.0"
+  }
+}
