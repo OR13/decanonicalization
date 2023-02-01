@@ -14,12 +14,18 @@ function parseHrtimeToSeconds(hrtime) {
   return seconds;
 }
 
+function parseHrtimeToMillis(hrtime) {
+  var millis = (hrtime[0] + (hrtime[1] / 1e6)).toFixed(4);
+  return millis;
+}
 
-const timeFunction = async (func) =>{
+const timeFunction = async (func) => {
   const start = process.hrtime();
   await func()
-  const durationSeconds = parseHrtimeToSeconds(process.hrtime(start));
-  return parseFloat(durationSeconds)
+  const end = process.hrtime(start);
+  const durationSeconds = parseHrtimeToSeconds(end);
+  const durationMillis = parseHrtimeToMillis(end);
+  return { "s": parseFloat(durationSeconds), "ms": parseFloat(durationMillis) }
 }
 
 const prepareVendor = async (v) => {
