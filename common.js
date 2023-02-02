@@ -3,9 +3,30 @@ import fs from 'fs'
 
 const document = JSON.parse(fs.readFileSync('./document.json').toString());
 
+const fill = (array, fn) => {
+  for(let i = 0; i < array.length; ++i) {
+    array[i] = fn();
+  }
+  return array;
+};
+
+const makeObjectForIndex_old = (index)=>{
+  const doc = JSON.parse(JSON.stringify(document))
+  doc.credentialSubject.items = new Array(index).fill({
+    name: 'itemsL1',
+    items: new Array(index).fill({ name: 'itemsL2' })
+  });
+  return doc;
+}
+
 const makeObjectForIndex = (index)=>{
   const doc = JSON.parse(JSON.stringify(document))
-  doc.credentialSubject.items = new Array(index).fill({ name: 'itemsL1', items: new Array(index).fill({ name: 'itemsL2' }) });
+  doc.credentialSubject.items = fill(new Array(index), () => ({
+    name: 'itemsL1-' + Math.random(),
+    items: fill(new Array(index), () => ({
+      name: 'itemsL2-' + Math.random()
+    }))
+  }));
   return doc;
 }
 
